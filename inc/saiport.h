@@ -4104,7 +4104,7 @@ typedef enum _sai_port_serdes_attr_t
      */
     SAI_PORT_SERDES_ATTR_RX_PRECODING,
 
-     /**
+    /**
      * @brief A collection of custom serdes attributes
      *
      * The value is of type sai_json_t, which can include multiple custom serdes
@@ -4115,25 +4115,29 @@ typedef enum _sai_port_serdes_attr_t
      * SDK interprets the JSON accordingly.
      *
      * Example of the JSON object:
+     * @verbatim
      * {
-     *   "attributes": [
-     *     {
-     *       "attr_xyz": {
-     *         "sai_metadata": {
-     *           "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
+     *     "attributes": [
+     *         {
+     *             "attr_xyz": {
+     *                 "sai_metadata": {
+     *                     "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
+     *                 },
+     *                 "value": [10, 10, 10, 10]
+     *             }
      *         },
-     *         "value": [10, 10, 10, 10]
-     *       },
-     *       "attr_abc": {
-     *         "sai_metadata": {
-     *           "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
+     *         {
+     *             "attr_abc": {
+     *                 "sai_metadata": {
+     *                     "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
+     *                 },
+     *                 "value": [20, 20, 20, 20]
+     *             }
      *         },
-     *         "value": [20, 20, 20, 20]
-     *       },
-     *       ...
-     *     }
-     *   ]
+     *         ...
+     *     ]
      * }
+     * @endverbatim
      *
      * @type sai_json_t
      * @flags CREATE_AND_SET
