@@ -4115,29 +4115,27 @@ typedef enum _sai_port_serdes_attr_t
      * SDK interprets the JSON accordingly.
      *
      * Example of the JSON object:
-     * @verbatim
      * {
-     *     "attributes": [
-     *         {
-     *             "attr_xyz": {
-     *                 "sai_metadata": {
-     *                     "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
-     *                 },
-     *                 "value": [10, 10, 10, 10]
-     *             }
-     *         },
-     *         {
-     *             "attr_abc": {
-     *                 "sai_metadata": {
-     *                     "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
-     *                 },
-     *                 "value": [20, 20, 20, 20]
-     *             }
-     *         },
-     *         ...
-     *     ]
+     * "attributes": [
+     * {
+     *    "attr_xyz": {
+     *        "sai_metadata": {
+     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST",
+     *        },
+     *        "value": [10, 10, 10, 10]
+     *    }
+     * },
+     * {
+     *    "attr_abc": {
+     *        "sai_metadata": {
+     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST",
+     *        },
+     *        "value": [20, 20, 20, 20]
+     *    }
+     * },
+     * ...
+     * ]
      * }
-     * @endverbatim
      *
      * @type sai_json_t
      * @flags CREATE_AND_SET
