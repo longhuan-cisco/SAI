@@ -4120,7 +4120,7 @@ typedef enum _sai_port_serdes_attr_t
      * {
      *    "attr_xyz": {
      *        "sai_metadata": {
-     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST",
+     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
      *        },
      *        "value": [10, 10, 10, 10]
      *    }
@@ -4128,7 +4128,7 @@ typedef enum _sai_port_serdes_attr_t
      * {
      *    "attr_abc": {
      *        "sai_metadata": {
-     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST",
+     *        "sai_attr_value_type": "SAI_ATTR_VALUE_TYPE_INT32_LIST"
      *        },
      *        "value": [20, 20, 20, 20]
      *    }
